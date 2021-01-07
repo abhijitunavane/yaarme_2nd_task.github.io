@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+.post-container {
+    width: 100%;
+}
+.post-container-div-userdetails-profilepic {
+    width: 50px;
+    height: 50px;
+}
+.post-container-div-userdetails-profilepic img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px 5px;
+}
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    .post-container {
+        width: 100%;
+    }
+    .post-container-div-userdetails {
+        display: flex;
+        padding: 5px;
+        padding-bottom: 0;
+    }
+    .post-container-div-userdetails div {
+        margin-right: 10px;
+    }
+    .post-container-div-userdetails-profilepic {
+        width: 50px;
+        height: 50px;
+    }
+    .post-container-div-userdetails-profilepic img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 5px 5px;
+    }
+    .post-container-div-userdetails-details {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .userdetails-details-username small {
+        color: grey;
+        display: block;
+    }
+    .userdetails-details-username img {
+        width: 12px;
+        height: 12px;
+    }
+    .post-container-div-userdetails-menu {
+        width: 30px;
+        height: 50px;
+    }
+    .post-container-div-userdetails-menu img{
+        width: 20px;
+        height: 20px;
+        margin: 12.5px 0;
+    }
+    .post-details-caption {
+        padding: 5px;
+        padding-left: 10px;
+    }
+    .post-details-imagesVideos {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .post-details-imagesVideos video {
+        width: 100%;
+        height: auto;
+    }
+    .post-details-imagesVideos button {
+        width: 50px;
+        height: 50px;
+        border: none;
+        display: block;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        border-radius: 50%;
+        top: 40%;
+    }
+    button.active {
+        background: rgba(0, 0, 0, 0.26) ;
+    }
+    .playbutton {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.568);
+    }
+    .post-container-div-reactionToPost {
+        width: 100%;
+        padding: 5px;
+        color: grey;
+        font-size: small;
+    }
+    .post-container-div-reactionToPost div {
+        display: flex;     
+    }
+    .post-container-div-reactionToPost-count {
+        justify-content: space-around;
+        border-bottom: 1px solid grey;
+        padding: 10px 2px;
+    }
+    .post-container-div-reactionToPost-count #likes {
+        width: 40%;
+    }
+    .post-container-div-reactionToPost-lcs {
+        justify-content: space-around;
+        border-bottom: 1px solid grey;
+        padding: 10px 2px;
+    }
+    .post-container-div-reactionToPost-lcs img{
+        width: 20px;
+        height: 20px;
+        padding-right: 8px;
+    }
+    .post-container-div-reactionToPost-lcs button {
+        border: none;
+        background: transparent;
+    }
+    .post-container-div-reactionToPost-comments {
+        border-bottom: 1px solid grey;
+        margin: 5px;
+        margin-top: 10px;
+        padding: 0px 2px;
+        display: flex;
+        flex-direction: column;
+    }
+    .post-container-div-reactionToPost-comments-submitComment {
+        width: 100%;
+        height: auto;
+    }
+    .post-container-div-reactionToPost-comments-userprofile {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+    }
+    .post-container-div-reactionToPost-comments-userprofile img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .post-container-div-reactionToPost-comments-write{
+        width: 100%;
+    }
+    .post-container-div-reactionToPost-comments-write input {
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid grey;
+        border-radius: 12px;
+        padding: 5px;
+    }
+    .post-container-div-reactionToPost-comments-post {
+        width: auto;
+    }
+    .post-container-div-reactionToPost-comments-post button {
+        padding: 3px;
+        color: grey;
+        background-color: #fff;
+        border: 1px solid grey;
+        text-align: center;
+    }
+    .post-container-div-reactionToPost-comments-submitEmojie {
+        padding: 15px 5px;
+    }
+    .post-container-div-reactionToPost-comments-submitEmojie img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    .post-container-div-reactionToPost-commentSection {
+        padding: 5px 2px;
+    }
+    .post-container-div-reactionToPost-comments-commentbox {
+        display: flex;
+        flex-direction: column;
+    }
+    .post-container-div-reactionToPost-comments-comment {
+        margin-left: 10px;
+        background-color: rgb(226, 224, 224);
+        padding: 5px;
+        margin: 0px 5px; 
+        color: black;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+    .post-container-div-reactionToPost-comments-react span {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

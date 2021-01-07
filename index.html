@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Second-task | YaarMe</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="post-container">
+		<div class="post-container-div">
+			<div class="post-container-div-userdetails">
+				<div class="post-container-div-userdetails-profilepic">
+					<img src="images/profilepic.jpg" alt="profilepic">
+				</div>
+				<div class="post-container-div-userdetails-details">
+					<div class="userdetails-details-username">
+						<strong id="post-details-username">
+							Bella Thorme
+						</strong>
+						<img src="images/check.svg" alt="verified">
+						<small id="userdetails-details-date">
+							December 29,2020 at 5.29 AM &middot;
+						</small>
+					</div>
+				</div>
+				<div class="post-container-div-userdetails-menu">
+					<img src="images/ellipsis-h-solid.svg" alt="menu">
+				</div>	
+			</div>
+			<div class="post-details-caption">
+				People having worst day than you &#128558;
+			</div>
+			<div class="post-details-imagesVideos">
+				<button class="active"  onclick="play()"><img class="playbutton" src="images/play-button.svg" alt="play"></button>
+				<video preload="auto" loop controls id="vdo">
+					<source src="videos/vdo.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="post-container-div-reactionToPost">
+				<div class="post-container-div-reactionToPost-count">
+					<span id="likes">&#128077;&#128518;&#128558; 168k others</span>
+					<span id="comments">3.2k comments</span> 
+					<span id="shares">38k shares</span> 
+				</div>
+				<div class="post-container-div-reactionToPost-lcs">
+					<button><span><img src="images/like.svg" alt="">Like</span></button>
+					<button><span><img src="images/chat.svg" alt="">Comment</span></button>
+					<button><span><img src="images/share.svg" alt="">Share</span></button>
+				</div>
+				<div class="post-container-div-reactionToPost-comments">
+					<div class="post-container-div-reactionToPost-comments-submitComment"> 
+						<div class="post-container-div-reactionToPost-comments-userprofile"><img src="images/profilepic.jpg" alt="profilepic"></div>
+						<div class="post-container-div-reactionToPost-comments-write"><input type="text" placeholder="Write a comment..."></div>
+						<div class="post-container-div-reactionToPost-comments-post"><button>Post</button></div>
+					</div>
+					<div class="post-container-div-reactionToPost-comments-submitEmojie">
+						<img src="images/smile.svg" alt="emojies">
+					</div>
+				</div>
+				<div class="post-container-div-reactionToPost-commentSection">					
+					<div class="post-container-div-reactionToPost-comments-userprofile"><img src="images/profilepic.jpg" alt="profilepic"></div>
+					<div class="post-container-div-reactionToPost-comments-commentbox">						
+						<div class="post-container-div-reactionToPost-comments-comment">
+							<strong>Hester Moore</strong>
+							<span>Glass breaks?! Who'd have thought it!!!</span>
+						</div>
+						<div class="post-container-div-reactionToPost-comments-react">
+							<span><small>Last wed</small></span>
+							<span><small>Like</small></span>
+							<span><small>Reply</small></span>
+							<span><small>More</small></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script>
+	var vdo = document.getElementById("vdo");
+	var playbutton = document.querySelector(".active");
+	function play() {
+		// if (vdo.paused || vdo.ended) {
+		// 	vdo.play();
+		// 	activebutton.style.visiblity = "hidden";
+		// }else {
+		// 	vdo.pause();
+		// 	activebutton.style.display = "visible";
+		// }
+		vdo.play();
+		console.log("hello");
+	}
+	
+</script>
+</html>
